@@ -1,7 +1,21 @@
 .button {
   background-color: transparent;
   color: var(--c-text-color);
+  border-radius: 99px;
   cursor: pointer;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   transition: all var(--t-fade);
+
+  &:hover {
+    background-color: var(--c-theme-20);
+    color: var(--c-theme);
+  }
+}
+
+.fullWidth {
+  width: 100% !important;
 }
