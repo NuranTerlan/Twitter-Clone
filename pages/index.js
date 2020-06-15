@@ -5,8 +5,8 @@ import Button from "../components/button";
 function HomePage() {
   return (
     <div>
-      <h1>Welcome to Next.js!</h1>
-      <Button>Welcome</Button>
+      <h1>Welcome to DEVVHALE developer hub !</h1>
+      <Button>Join Nuran's team</Button>
     </div>
   );
 }
