@@ -1,3 +1,7 @@
 .button {
-    background-color: #ccc;
+  background-color: transparent;
+  color: var(--c-text-color);
+  cursor: pointer;
+
+  transition: all var(--t-fade);
 }
