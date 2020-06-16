@@ -1,13 +1,21 @@
 import React from "react";
 
-import Button from "../components/button";
+import CONST from "../constants/index"
+import Layout from "../components/layout";
+import useWindowSize from "./../hooks/useWindowSize";
+import SideBar from './../components/col-sidebar';
+import Main from './../components/col-main';
+import Extra from './../components/col-extra';
 
 function HomePage() {
+  const size = useWindowSize();
+
   return (
-    <div>
-      <h1>Welcome to DEVVHALE developer hub !</h1>
-      <Button>Join Nuran's team</Button>
-    </div>
+    <Layout>
+      <SideBar flat={size.width < CONST.DESKTOP_SIZE}>Sidebar</SideBar>
+      <Main>Main.Size : {JSON.stringify(size)}</Main>
+      {size.width > CONST.TABLET_SIZE && <Extra>Extra</Extra>}
+    </Layout>
   );
 }
 
