@@ -8,60 +8,95 @@ import {
   Explore,
   Notifications,
   Messages,
-  More,
-  Profile,
-  Lists,
   Bookmarks,
+  Lists,
+  Profile,
+  More,
+  HomeFill,
+  ExploreFill,
+  NotificationsFill,
+  MessagesFill,
+  BookmarksFill,
+  ListsFill,
+  ProfileFill,
 } from "./icons";
+
+const MENU = [
+  {
+    key: "twitter",
+    icon: <Twitter />,
+    title: "",
+  },
+  {
+    key: "home",
+    icon: <Home />,
+    iconSelected: <HomeFill />,
+    title: "Home",
+  },
+  {
+    key: "explore",
+    icon: <Explore />,
+    iconSelected: <ExploreFill />,
+    title: "Explore",
+  },
+  {
+    key: "notifications",
+    icon: <Notifications />,
+    iconSelected: <NotificationsFill />,
+    title: "Notifications",
+    notify: 17,
+  },
+  {
+    key: "messages",
+    icon: <Messages />,
+    iconSelected: <MessagesFill />,
+    title: "Messages",
+  },
+  {
+    key: "bookmarks",
+    icon: <Bookmarks />,
+    iconSelected: <BookmarksFill />,
+    title: "Bookmarks",
+  },
+  {
+    key: "lists",
+    icon: <Lists />,
+    iconSelected: <ListsFill />,
+    title: "Lists",
+  },
+  {
+    key: "profile",
+    icon: <Profile />,
+    iconSelected: <ProfileFill />,
+    title: "Profile",
+  },
+  {
+    key: "more",
+    icon: <More />,
+    title: "More",
+  },
+];
 
 import styles from "./navigation.module.css";
 
-const Navigation = ({ selectedKey }) => {
+const Navigation = ({ flat = false, selectedKey }) => {
   return (
     <nav className={styles.nav}>
-      <NavButton>
-        <Twitter />
-      </NavButton>
+      {MENU.map((menuItem) => {
+        const showFullNav = !flat && menuItem.title.length > 0;
+        const selected = selectedKey === menuItem.key;
 
-      <NavButton selected={selectedKey === "home"}>
-        <Home />
-        <TextTitle>Home</TextTitle>
-      </NavButton>
-
-      <NavButton selected={selectedKey === "explore"}>
-        <Explore />
-        <TextTitle>Explore</TextTitle>
-      </NavButton>
-
-      <NavButton notify={15} selected={selectedKey === "notifications"}>
-        <Notifications />
-        <TextTitle>Notifications</TextTitle>
-      </NavButton>
-
-      <NavButton selected={selectedKey === "messages"}>
-        <Messages />
-        <TextTitle>Messages</TextTitle>
-      </NavButton>
-
-      <NavButton selected={selectedKey === "bookmarks"}>
-        <Bookmarks />
-        <TextTitle>Bookmarks</TextTitle>
-      </NavButton>
-
-      <NavButton selected={selectedKey === "lists"}>
-        <Lists />
-        <TextTitle>Lists</TextTitle>
-      </NavButton>
-
-      <NavButton selected={selectedKey === "profile"}>
-        <Profile />
-        <TextTitle>Profile</TextTitle>
-      </NavButton>
-
-      <NavButton selected={selectedKey === "more"}>
-        <More />
-        <TextTitle>More</TextTitle>
-      </NavButton>
+        return (
+            <NavButton
+            key={menuItem.key}
+            notify={menuItem.notify}
+            selected={selected}
+          >
+            {selected ? menuItem.iconSelected : menuItem.icon}
+            {showFullNav && <TextTitle>{menuItem.title}</TextTitle>}
+          </NavButton>
+        );
+      })}
     </nav>
   );
 };

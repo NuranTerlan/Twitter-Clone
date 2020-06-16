@@ -1,17 +1,31 @@
 .themeButton {
   background-color: var(--c-theme);
   color: var(--c-text-color);
-  padding-left: 15px;
-  padding-right: 15px;
   height: 40px;
+  min-width: 40px;
   font-weight: bold;
 
   &:hover {
-    background-color: var(--c-theme);
+    background-color: var(--c-tweet-hover);
     color: var(--c-text-color);
+  }
+
+  @media (--mode-desk) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .tall {
   height: 47px;
+  min-width: 47px;
+
+  @media (--mode-desk) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  svg {
+    font-size: 22px;
+  }
 }

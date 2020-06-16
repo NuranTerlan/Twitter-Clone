@@ -23,11 +23,13 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
+    "postcss-custom-media": "^7.0.8",
     "postcss-loader": "^3.0.0",
     "postcss-nested": "^4.2.1",
     "style-loader": "^1.2.1"
