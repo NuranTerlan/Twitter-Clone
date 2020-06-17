@@ -3,10 +3,6 @@
   padding: 10px;
   position: relative;
 
-  &:nth-child(1) {
-    color: var(--c-theme);
-  }
-
   svg {
     font-size: 26px;
 

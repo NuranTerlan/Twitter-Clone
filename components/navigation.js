@@ -88,6 +88,7 @@ const Navigation = ({ flat = false, selectedKey }) => {
 
         return (
             <NavButton
+            className={styles.item}
             key={menuItem.key}
             notify={menuItem.notify}
             selected={selected}
