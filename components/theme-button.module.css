@@ -1,6 +1,6 @@
 .themeButton {
   background-color: var(--c-theme);
-  color: var(--c-text-color);
+  color: #fff;
   height: 40px;
   min-width: 40px;
   font-weight: bold;
@@ -17,8 +17,8 @@
 }
 
 .tall {
-  height: 47px;
-  min-width: 47px;
+  height: 48.5px;
+  min-width: 48.5px;
 
   @media (--mode-desk) {
     padding-left: 15px;
