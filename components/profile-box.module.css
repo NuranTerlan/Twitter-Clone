@@ -6,8 +6,7 @@
   }
 
   .body {
-    margin-left: 5px;
-    margin-right: 65px;
+    margin-right: 60px;
 
     * {
       display: block;
@@ -16,9 +15,11 @@
 
   .slugBelow {
     color: var(--c-gray);
+    margin-left: 8px;
   }
 
   .icon {
     margin-left: auto;
+    font-size: 20px;
   }
 }
