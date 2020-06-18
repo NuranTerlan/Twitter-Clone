@@ -1,5 +1,15 @@
 .nav {
+
   button {
+
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (--mode-desk) {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
     & + button {
       margin-top: 8px;
     }
