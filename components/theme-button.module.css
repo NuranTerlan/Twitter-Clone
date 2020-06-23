@@ -17,8 +17,8 @@
 }
 
 .tall {
-  height: 48.5px;
-  min-width: 48.5px;
+  height: 49px;
+  min-width: 49px;
 
   @media (--mode-desk) {
     padding-left: 15px;
