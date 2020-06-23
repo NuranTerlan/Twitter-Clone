@@ -11,7 +11,7 @@ import { Tweet } from "./icons";
 const SideBar = ({ flat }) => {
   return (
     <div className={cn(styles.sidebar)}>
-      <Navigation flat={flat} selectedKey="home" />
+      <Navigation flat={flat}/>
       <div className={styles.tweet}>
         <ThemeButton full={!flat} tall>
           {flat ? <Tweet /> : "Tweet"}
