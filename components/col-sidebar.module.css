@@ -8,7 +8,7 @@
   align-items: center;
 
   @media (--mode-desk) {
-    padding-right: 46px;
+    padding-right: 29px;
     align-items: flex-start;
   }
 }
@@ -18,7 +18,7 @@
   margin-bottom: 20px;
 
   @media (--mode-desk) {
-    width: 210px;
+    width: 228px;
   }
 }
 
