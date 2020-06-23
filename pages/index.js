@@ -7,16 +7,19 @@ import SideBar from './../components/col-sidebar';
 import Main from './../components/col-main';
 import Extra from './../components/col-extra';
 
-function HomePage() {
+function LayoutPage({ children }) {
   const size = useWindowSize();
 
   return (
     <Layout>
       <SideBar flat={size.width < CONST.DESKTOP_SIZE}>Sidebar</SideBar>
-      <Main>Main.Size : {JSON.stringify(size)}</Main>
+      <Main>
+        <div>Main.Size : {JSON.stringify(size)}</div>
+        {children}
+      </Main>
       {size.width > CONST.TABLET_SIZE && <Extra>Extra</Extra>}
     </Layout>
   );
 }
 
-export default HomePage;
+export default LayoutPage;
