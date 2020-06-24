@@ -1,0 +1,42 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+
+  .label {
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+
+    input[type="radio"] {
+      font-size: 15px;
+      width: 1em;
+      height: 1em;
+      margin-right: 10px;
+    }
+  }
+
+  .colorBox {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-left: 10px;;
+  }
+
+  :global(.light) {
+    background-color: #fff;
+  }
+
+  :global(.dim) {
+    background-color: rgb(21, 32, 43);
+  }
+
+  :global(.dark) {
+    background-color: #000;
+  }
+
+}
