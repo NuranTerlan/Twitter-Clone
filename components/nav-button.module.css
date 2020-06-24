@@ -27,7 +27,7 @@
   position: absolute;
   left: 20px;
   top: 5px;
-  border: 1px solid var(--c-primary-color);
+  border: 1px solid var(--c-primary);
   background-color: var(--c-theme);
   color: var(--c-text-color);
   font-size: 11px;
