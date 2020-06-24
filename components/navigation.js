@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import cn from "classnames"
 
-import { MENU } from "../constants";
 import styles from "./navigation.module.css";
 
+import { MENU } from "../constants";
 import NavButton from "./nav-button";
 import TextTitle from "./text-title";
 
@@ -21,7 +22,7 @@ const Navigation = ({ flat = false }) => {
         return (
           <Link key={menuItem.key} href={`${menuItem.path}`}>
             <NavButton
-              className={styles.item}
+              className={cn([styles.navButton, menuItem.key])}
               notify={menuItem.notify}
               selected={selected}
             >

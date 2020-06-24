@@ -14,10 +14,4 @@
       margin-top: 8px;
     }
   }
-
-  .item:nth-child(1) {
-    svg {
-      font-size: 29.9px;
-    }
-  }
 }

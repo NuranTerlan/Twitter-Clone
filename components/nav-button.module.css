@@ -11,6 +11,14 @@
       margin-right: 15px;
     }
   }
+  
+  &:global(.twitter) {
+    color: var(--c-theme);
+
+    :global(html:not(.light)) & {
+      color: #fff;
+    }
+  }
 }
 
 .navButtonSelected {
@@ -29,6 +37,6 @@
   top: 5px;
   border: 1px solid var(--c-primary);
   background-color: var(--c-theme);
-  color: var(--c-text-color);
+  color: #fff;
   font-size: 11px;
 }
