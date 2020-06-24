@@ -10,8 +10,10 @@ export default {
   {
     key: "twitter",
     path: "/home",
-    icon: <Icon.Twitter />,
-    iconSelected: <Icon.Twitter style={{ color: "var(--c-text-color)"}}/>,
+    icon: <Icon.Twitter style={{ 
+      "font-size": "30px"}}/>,
+    iconSelected: <Icon.Twitter style={{ 
+      "font-size": "30px"}}/>,
     title: "",
   },
   {
