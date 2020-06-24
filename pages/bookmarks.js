@@ -1,11 +1,11 @@
 import React from "react";
-import LayoutPage from "./index";
+import Layout from "../components/layout";
 
 const BookMarks = () => {
   return (
-    <LayoutPage>
+    <Layout>
       <h1>BookMarks page is here !</h1>
-    </LayoutPage>
+    </Layout>
   );
 };
 

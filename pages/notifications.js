@@ -1,11 +1,11 @@
 import React from "react";
-import LayoutPage from "./index";
+import Layout from "../components/layout";
 
 const Notifications = () => {
   return (
-    <LayoutPage>
+    <Layout>
       <h1>Notifications page is here !</h1>
-    </LayoutPage>
+    </Layout>
   );
 };
 

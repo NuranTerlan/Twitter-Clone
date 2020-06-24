@@ -1,11 +1,11 @@
 import React from "react";
-import LayoutPage from "./index";
+import Layout from './../components/layout';
 
 const Messages = () => {
   return (
-    <LayoutPage>
+    <Layout>
       <h1>Messages page is here !</h1>
-    </LayoutPage>
+    </Layout>
   );
 };
 
