@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import Layout from "../components/layout";
 
 const ErrorPage = () => {
-    return ( <h1>ERROR PAGE IS HERE</h1> );
-}
- 
+  return (
+    <Layout>
+      <h1>ERROR PAGE IS HERE</h1>
+    </Layout>
+  );
+};
+
 export default ErrorPage;
