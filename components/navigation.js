@@ -1,14 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import cn from "classnames"
+import cn from "classnames";
 
 import styles from "./navigation.module.css";
 
 import { MENU } from "../constants";
 import NavButton from "./nav-button";
 import TextTitle from "./text-title";
-
 
 const Navigation = ({ flat = false }) => {
   const router = useRouter();
